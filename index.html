@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //map()
+        const number1 = [1, 2, 3, 4];
+        const double = number1.map(num => num * 2);
+        console.log(double);
+
+        // filter()
+        const number2 = [1, 2, 3, 4];
+        const evenNumbers = number2.filter(num => num % 2 === 0);
+        console.log(evenNumbers);
+
+        // forEach()
+        const numbers3 = [1, 2, 3, 4];
+        numbers3.forEach(num => console.log(num * 2));
+
+        //indexOf()
+        const fruits1 = ['apple', 'banana', 'mango'];
+        const index = fruits1.indexOf('banana');
+        console.log(index);
+
+        // includes()
+        const fruits2 = ['apple', 'banana', 'mango'];
+        const hasBanana = fruits2.includes('banana');
+        console.log(hasBanana);
+
+        // every()
+        const numbers4 = [2, 4, 6, 8];
+        const allEven = numbers4.every(num => num % 2 === 0);
+        console.log(allEven);
+
+        //some()
+        const numbers = [1, 2, 3, 4];
+        const hasOdd = numbers.some(num => num % 2 !== 0);
+        console.log(hasOdd);
+
+        //Looping Through Array
+
+        //for Loop
+        const arr = [1, 2, 3, 4, 5];
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+
+        //for of Loop
+        for (const value of arr) {
+            console.log(value); 
+        }
+
+        //forEach
+        arr.forEach((value, index) => {
+            console.log(`Index: ${index}, Value: ${value}`);
+        });
+
+        //map
+        const doubled = arr.map(value => value * 2);
+        console.log(doubled);
+
+        //for...in
+        for (const index in arr) {
+            console.log(arr[index]); 
+        }
+
+        //push
+        const fruits3 = ['apple', 'banana'];
+        fruits3.push('orange', 'mango');
+        console.log(fruits3);
+
+        //pop
+        const fruits4 = ['apple', 'banana', 'orange'];
+        const lastFruit = fruits4.pop();
+        console.log(lastFruit);
+        console.log(fruits4);
+
+        //shift()
+        const fruits5 = ['apple', 'banana', 'orange'];
+        const firstFruit = fruits5.shift();
+        console.log(firstFruit);
+        console.log(fruits5);
+
+        //unshift
+        const fruits6 = ['banana', 'orange'];
+        fruits6.unshift('apple', 'kiwi');
+        console.log(fruits6);
+
+        //splice
+        const fruits7 = ['apple', 'banana', 'orange', 'mango'];
+        const removed = fruits7.splice(1, 2);
+        console.log(removed);
+        console.log(fruits7);
+    </script>
+</body>
+
+</html>
